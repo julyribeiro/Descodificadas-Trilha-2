@@ -1,0 +1,187 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Reset básico de margens para todos os elementos */
+* {
+    margin: 0;
+}
+
+/* Estilos do corpo da página */
+body {
+    background-image: url(imagens-icones/fundo-de-tela.jpeg); /* Imagem de fundo */
+    background-repeat: repeat; /* A imagem de fundo irá se repetir */
+    font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Família de fontes */
+}
+
+/* Estilos para o título principal no cabeçalho */
+header h1 {
+    font-size: 52px; /* Tamanho grande do texto */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 20px; /* Espaço superior do título */
+    text-shadow: 3px 3px 4px #808080; /* Sombra no texto para destacar */
+}
+
+/* Estilo para textos pequenos dentro de células da tabela */
+td h5 {
+    text-align: right; /* Alinha o texto à direita */
+    font-size: 11px; /* Tamanho reduzido */
+    padding-right: 4px; /* Espaço interno à direita */
+}
+
+/* Estilo para títulos dentro das células da tabela */
+td h3 {
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para subtítulos menores dentro das células da tabela */
+td h4 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 11px; /* Tamanho de fonte pequeno */
+}
+
+/* Classe para células vazias */
+.vazio {
+    background-color: transparent; /* Sem cor de fundo */
+}
+
+/* Estilo de posicionamento e espaçamento para a primeira tabela */
+.tabela1 {
+    padding-top: 10px;
+    padding-left: 280px;
+    padding-right: 220px;
+}
+
+/* Estilo de posicionamento e espaçamento para a segunda tabela */
+.tabela2 {
+    padding-top: 30px;
+    padding-left: 285px;
+    padding-right: 180px;
+}
+
+/* Estilo de posicionamento e espaçamento para a legenda */
+.legenda {
+    padding-top: 30px;
+    padding-left: 285px;
+    padding-right: 180px;
+}
+
+/* Estilo das células nas tabelas: definindo largura, altura e bordas arredondadas */
+.tabela1 td,
+.tabela2 td {
+    width: 65px; /* Largura fixa das células */
+    height: 55px; /* Altura fixa das células */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilos para diferentes categorias de elementos, com cores de fundo e bordas */
+
+/* Metais alcalinos */
+.vermelho,
+#metais-alcalinos {
+    background-color: #ff8888; /* Fundo vermelho claro */
+    border: 1.5px solid #a50808; /* Borda vermelha escura */
+}
+
+/* Metais alcalino-terrosos */
+.bege,
+#metais-alcalinoterrosos {
+    background-color: #e6d5b6; /* Fundo bege */
+    border: 1.5px solid #dd9817; /* Borda dourada */
+}
+
+/* Metais de transição */
+.verde,
+#metais-transicao {
+    background-color: #d6f1d8; /* Fundo verde claro */
+    border: 1.5px solid #37e640; /* Borda verde escura */
+}
+
+/* Metais pós-transição */
+.lilas,
+#metais-pos-transicao {
+    background-color: #e7cbee; /* Fundo lilás */
+    border: 1.5px solid #bd05eb; /* Borda roxa */
+}
+
+/* Semimetais */
+.amarelo,
+#semimetais {
+    background-color: #fffec2; /* Fundo amarelo claro */
+    border: 1.5px solid #8d8b15; /* Borda amarela escura */
+}
+
+/* Não-metais poliatômicos */
+.verde-esc,
+#nao-metais-poliatomicos {
+    background-color: #a6df78; /* Fundo verde escuro */
+    border: 1.5px solid #325c10; /* Borda verde oliva */
+}
+
+/* Não-metais diatômicos */
+.laranja,
+#nao-metais-diatomicos {
+    background-color: #fdc8a5; /* Fundo laranja claro */
+    border: 1.5px solid #e97020; /* Borda laranja escura */
+}
+
+/* Gases nobres */
+.rosa,
+#gases-nobres {
+    background-color: #ffcbdb; /* Fundo rosa claro */
+    border: 1.5px solid #fa5687; /* Borda rosa escura */
+}
+
+/* Elementos com propriedades químicas desconhecidas */
+.cinza,
+#propriedades-quimicas-desconhecidas {
+    background-color: #dadada; /* Fundo cinza claro */
+    border: 1.5px solid #727272; /* Borda cinza escura */
+}
+
+/* Lantanídeos */
+.azul-esc,
+#lantanideos {
+    background-color: #7399ca; /* Fundo azul escuro */
+    border: 1.5px solid #1a66ca; /* Borda azul escura */
+}
+
+/* Actinídeos */
+.azul-claro,
+#actinideos {
+    background-color: #b9cee9; /* Fundo azul claro */
+    border: 1.5px solid #478de9; /* Borda azul clara */
+}
+
+/* Estilo para as células da legenda (diferentes categorias de elementos) */
+#metais-alcalinos,
+#metais-alcalinoterrosos,
+#metais-transicao,
+#metais-pos-transicao,
+#semimetais,
+#nao-metais-poliatomicos,
+#nao-metais-diatomicos,
+#gases-nobres,
+#propriedades-quimicas-desconhecidas,
+#lantanideos,
+#actinideos {
+    width: 30px;
+    border-radius: 4px;
+}
+
+/* Estilo para os textos das células da legenda */
+.legenda td h2 {
+    background-color: #f7f7f7; /* Fundo claro */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    text-align: left; /* Alinhamento à esquerda */
+    padding: 3px 4px; /* Espaçamento interno */
+    margin: 1px;
+    margin-right: 12px;
+}
+
+/* Ajuste de espaçamento específico para a legenda */
+.legenda {
+    padding-top: 30px;
+    padding-left: 360px;
+}
